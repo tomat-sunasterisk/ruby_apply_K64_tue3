@@ -8,8 +8,7 @@ class Menu
      total_price = self.price * count
    else count>=3
      total_price = self.price * count - 10000
-     end
-    #  puts "Phở: #{total_price} vnd"
+   end
     return "#{self.name} #{total_price}vnd"
   end
  end
