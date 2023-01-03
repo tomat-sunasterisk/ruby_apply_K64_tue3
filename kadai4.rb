@@ -5,19 +5,19 @@ class Bingo
     for a in 0..4 do
       case char
         when 'B'
-          self.value[a] = (1..15).to_a.sample(5)
+          self.value[a] = (1..15).to_a.sample(1)
         when 'I'
-          self.value[a] = (16..30).to_a.sample(5)
+          self.value[a] = (16..30).to_a.sample(1)
         when 'N'
           if a == 2
             self.value[a] = ' '
             next
           end
-          self.value[a] = (31..45).to_a.sample(5)
+          self.value[a] = (31..45).to_a.sample(1)
         when 'G'
-          self.value[a] = (46..60).to_a.sample(5)
+          self.value[a] = (46..60).to_a.sample(1)
         when 'O'
-          self.value[a] = (61..75).to_a.sample(5)
+          self.value[a] = (61..75).to_a.sample(1)
       end
     end
   end
