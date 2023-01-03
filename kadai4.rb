@@ -21,6 +21,7 @@ class Bingo
     end
 end
 
+puts " B | I  | N  | G  | O  "
 bingo = Bingo.new
 bingo.generate_card
 bingo.display
