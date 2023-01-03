@@ -21,6 +21,7 @@ class Drink < Menu
     end
 end
 
+# Initialize the object
 menu1 = Menu.new("Phở", 30000)
 menu2 = Menu.new("Bún chả", 40000)
 menu3 = Menu.new("Bánh mì", 20000)
