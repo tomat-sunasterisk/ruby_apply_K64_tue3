@@ -11,16 +11,32 @@ class Menu
         self.price = price
     end
     def get_menu
-        puts "#{self.name} #{total_price}vnd"
+        puts "#{self.name}: #{self.price}}vnd"
+    end
+end
+class Drink < Menu
+    attr_accessor :size
+    def initialize(name, size, price )
+        super(name: name, price: price)
+        self.size = size
+    end
+    def get_drink
+        puts "#{self.name}: #{self.price} (#{self.size})}vnd"
     end
 end
 menu1 = Menu.new("pho", 30000)
 menu2 = Menu.new("bun cha", 40000)
 menu3 = Menu.new("banh mi", 20000)
-menus = [menu1, menu2, menu3]
 
-    puts "#{menus[0].name} #{menus[0].price}vnd"
-    puts "#{menus[1].name} #{menus[1].price}vnd"
-    puts "#{menus[2].name} #{menus[2].price}vnd"
+drink1 = Drink.new("tra", "S size", 20000)
+drink2 = Drink.new("tra", "M size", 30000)
+menus = [menu1, menu2, menu3, drink1, drink2]
+
+   menu1.get_menu
+   menu2.get_menu
+   menu3.get_menu
+   drink1.get_drink
+   drink2.get_drink
+
 
 
