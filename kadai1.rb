@@ -5,7 +5,7 @@ class Menu
   def get_total_price(count)
     total_price = price * count
     total_price -= 10_000 if count >= 3
-    "#{name} #{total_price}vnd"
+    "#{name} #{total_price} đồng"
   end
 end
 
