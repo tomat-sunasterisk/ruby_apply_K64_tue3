@@ -1,1 +1,1 @@
-puts "Hello, World!"
+puts rand(1..10)
